@@ -1,0 +1,7 @@
+Makeup[[:space:]]scene.mp4 filter=lfs diff=lfs merge=lfs -text
+river.mp4 filter=lfs diff=lfs merge=lfs -text
+Finishes[[:space:]]trailer[[:space:]](2012).mp4 filter=lfs diff=lfs merge=lfs -text
+git[[:space:]]lfs[[:space:]]track[[:space:]]*.psd filter=lfs diff=lfs merge=lfs -text
+Eleftherios[[:space:]]Veniadis[[:space:]]-[[:space:]]MIRANDA.mp4 filter=lfs diff=lfs merge=lfs -text
+Don't[[:space:]]Forget[[:space:]]To[[:space:]]Go[[:space:]]Home[[:space:]]-[[:space:]]Trailer.mp4 filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text

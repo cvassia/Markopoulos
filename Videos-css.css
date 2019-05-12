@@ -1,0 +1,107 @@
+body, html  {
+    margin: 0px;
+    height: 100%;
+    background-color: black;
+    padding-top: 10px;
+    margin: 0 auto;
+
+}
+
+
+
+#menu {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(41, 37, 37);
+    width: 90px;
+    height: 100%;
+
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+
+
+    
+}
+
+
+/* .about {
+    float: left;
+} */
+.about .one {
+    display: block;
+    color: white;
+    padding: 25px 10px;
+    text-decoration: none;
+    
+}
+
+
+
+#active {
+    border-bottom: 4px solid rgba(153, 153, 153, 0.096);
+    border-top:  4px solid rgba(153, 153, 153, 0.096);
+    background-color: rgba(124, 124, 124, 0.24);
+
+}
+  
+  .about .one:hover:not(#active) {
+    background-color: rgb(124, 124, 124);
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #menu {
+        width: 65px;
+    	}
+ 	}
+
+@media screen and (max-width: 600px) {
+    .about .one {
+        padding: 25px 5px;
+        }
+    }
+
+
+/* μεχρι εδω σε καθε css */
+
+.all {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 90px;
+}
+
+.video-container {
+    flex: 30%;
+    width: 30%;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    display: inline-block;
+  }
+  
+  .responsive-video { 
+    flex: 30%; 
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  
+  .responsive-video iframe, .responsive-video video {
+    flex: 30%; 
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+  }
+  
+  @media (max-width: 600px) {
+.video-container, .responsive-video, .responsive-video video {
+      flex: 100%;
+      max-width: 100%;
+      left: 0px;
+      
+    }
+  }
