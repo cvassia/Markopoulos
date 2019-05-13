@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="utf-8" />
 
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta 
-        name="viewport" content="width=device-width, initial-scale=1">
+    <title>SpMs</title>
+    <link rel="icon" type="image/ico" href="icon.jpg" />
 
-	<title>SpMs</title>
-	<link rel="icon" type="image/ico" href="icon.jpg" />
+    <link rel="stylesheet" type="text/css" href="Contact-css.css" />
 
-    <link rel="stylesheet" type="text/css" href="Contact-css.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-</head>
-
-<body>
-
+  <body>
     <header>
+      <nav>
+        <a href="#" id="menu-icon"></a>
 
-        <nav>
-
-            <a href="#" id="menu-icon"></a>
-
-            <ul id="menu">
-                <li class="about"><a class= "one" href= "spyros.html">Home</a></li>
-                <li class="about"><a class= "one" href="About.html">About</a></li>
-                <li class="about"><a class= "one"  href="Photos.html">Photos</a></li>
-                <li class="about"><a class= "one" href="Videos.html">Videos</a></li>
-                <li class="about"><a class= "one" id="active" href="Contact.html">Contact</a></li>
-            </ul>
-
-   
-        </nav>
-
+        <ul id="menu">
+          <li class="about"><a class="one" href="index.html">Home</a></li>
+          <li class="about"><a class="one" href="About.html">About</a></li>
+          <li class="about"><a class="one" href="Photos.html">Photos</a></li>
+          <li class="about"><a class="one" href="Videos.html">Videos</a></li>
+          <li class="about">
+            <a class="one" id="active" href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-
 
     <!-- <div>
         <p class="contact">
@@ -45,95 +39,103 @@
         </p>
     </div> -->
     <div id="desktop">
-        <div>
-            <a href="https://www.facebook.com/spyros.markopoulos.37?ref=br_rs" 
-                class="fa fa-facebook fa-3x"></a>
-        </div>
-        <div>
-            <a href="https://gr.pinterest.com/spyros"
-                class="fa fa-pinterest fa-3x"></a>
-        </div>
+      <div>
+        <a
+          href="https://www.facebook.com/spyros.markopoulos.37?ref=br_rs"
+          class="fa fa-facebook fa-3x"
+        ></a>
+      </div>
+      <div>
+        <a
+          href="https://gr.pinterest.com/spyros"
+          class="fa fa-pinterest fa-3x"
+        ></a>
+      </div>
 
-        <div>
-            <a href="https://vimeo.com/search?q=spyros+markopoulos"
-                class="fa fa-vimeo fa-3x"></a>
-        </div>       
+      <div>
+        <a
+          href="https://vimeo.com/search?q=spyros+markopoulos"
+          class="fa fa-vimeo fa-3x"
+        ></a>
+      </div>
 
+      <div>
+        <a href="https://twitter.com/?lang=el" class="fa fa-twitter fa-3x"></a>
+      </div>
 
-        <div>
-            <a href="https://twitter.com/?lang=el"
-                class="fa fa-twitter fa-3x"></a>
-        </div> 
-
-        <div>
-            <a href="https://www.youtube.com/?hl=el"
-                class="fa fa-youtube fa-3x"></a>
-        </div> 
+      <div>
+        <a
+          href="https://www.youtube.com/?hl=el"
+          class="fa fa-youtube fa-3x"
+        ></a>
+      </div>
     </div>
 
     <div id="mobile">
-        <div>
-            <a href="https://www.facebook.com/spyros.markopoulos.37?ref=br_rs" 
-                class="fa fa-facebook fa-2x"></a>
-        </div>
-        <div>
-            <a href="https://gr.pinterest.com/spyros"
-                class="fa fa-pinterest fa-2x"></a>
-        </div>
+      <div>
+        <a
+          href="https://www.facebook.com/spyros.markopoulos.37?ref=br_rs"
+          class="fa fa-facebook fa-2x"
+        ></a>
+      </div>
+      <div>
+        <a
+          href="https://gr.pinterest.com/spyros"
+          class="fa fa-pinterest fa-2x"
+        ></a>
+      </div>
 
-        <div>
-            <a href="https://vimeo.com/search?q=spyros+markopoulos"
-                class="fa fa-vimeo fa-2x"></a>
-        </div>         
+      <div>
+        <a
+          href="https://vimeo.com/search?q=spyros+markopoulos"
+          class="fa fa-vimeo fa-2x"
+        ></a>
+      </div>
 
+      <div>
+        <a href="https://twitter.com/?lang=el" class="fa fa-twitter fa-2x"></a>
+      </div>
 
-        <div>
-            <a href="https://twitter.com/?lang=el"
-                class="fa fa-twitter fa-2x"></a>
-        </div> 
-
-        <div>
-            <a href="https://www.youtube.com/?hl=el"
-                class="fa fa-youtube fa-2x"></a>
-        </div> 
+      <div>
+        <a
+          href="https://www.youtube.com/?hl=el"
+          class="fa fa-youtube fa-2x"
+        ></a>
+      </div>
     </div>
 
-    
+    <button class="open-button" onclick="openForm()">Contact Me</button>
 
-        <button class="open-button" onclick="openForm()">Contact Me</button>
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1 class="write">Write me something</h1>
 
-    
-        <div class="form-popup" id="myForm">
-            <form action="/action_page.php" class="form-container">
-                <h1 class="write">Write me something</h1>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
 
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+        <label for="text"><b>Your Text</b></label>
+        <input
+          type="speach"
+          placeholder="Enter your text"
+          name="psw"
+          required
+        />
 
-                <label for="text"><b>Your Text</b></label>
-                <input type="speach" placeholder="Enter your text" name="psw" required>
-
-                <button type="submit" class="btn">Send</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-            </form>
-        </div>
-
-    
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+    </div>
 
     <script>
-        function openForm() {
-          document.getElementById("myForm").style.display = "block";
-        }
-        
-        function closeForm() {
-          document.getElementById("myForm").style.display = "none";
-        }
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
     </script>
-        
-        
-
-
-
-
-</body>
+  </body>
 </html>
